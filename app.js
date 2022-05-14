@@ -44,9 +44,9 @@ bot.on('video', async (ctx) => {
   console.log('videoHeight', videoHeight)
 
   // todo: made watermark size based on ration and known formats
-  let watermarSize = videoWidth / 4;
+  let watermarSize = parseInt( videoWidth / 3.5 );
   if ( videoHeight > videoWidth ) {
-    watermarSize = videoHeight / 4;
+    watermarSize = parseInt( videoHeight / 3.5 );
   }
   console.log('watermarSize', watermarSize)
 
