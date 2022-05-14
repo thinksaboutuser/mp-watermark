@@ -99,7 +99,7 @@ bot.on('video', async (ctx) => {
                             filename: 'somefilename.txt'
                           }).catch(function(error){ console.log(error); })*/
 
-                          await ctx.replyWithVideo(`https://1c64-188-163-120-20.ngrok.io/${ctx.update.message.video.file_unique_id}-with-watermark.mp4`)
+                          await ctx.replyWithVideo(`${URL}/${ctx.update.message.video.file_unique_id}-with-watermark.mp4`)
                           .then(()=>{
                             console.log('finish')
 
